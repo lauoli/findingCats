@@ -23,25 +23,72 @@ html, body {
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 35px;
   text-align: center;
   padding: 20px 20px;
+}
+
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 0px 22px;
+  font-size: 21px;
+}
+
+h3 {
+  border-bottom: 5px dotted;
+  margin: 26px;
 }
 
 p {
   font-family: 'Libre Franklin', sans-serif;
   text-align: left;
-  padding: 10px 20px;
+  padding: 0px 20px;
+}
+
+div.hotspot {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+div.hotspot img {
+  width: 100%;
+  padding: 5px;
+}
+
+div.modal {
+  height: 60vh;
+  width: 75vw;
+  border-radius: 50%;
+  position: fixed;
+  top: 200%;
+  left: 0;
+  padding: 1em;
+  opacity: .80;
+  transition: top 0.5s ease-in-out;
+  text-align: center;
+}
+
+div.modal.active {
+  top: 25%;
+  left: 6%;
+}
+
+.modal .inner {
+  height: 100%;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 1em;
 }
 
 img {
   margin-top: 10px;
-  margin-left: 20px;
+  margin-left: 0px;
+  height: 55vh;
   /* width: auto 0; */
 }
 
 .that {
-  height: 100vh;
+  height: 55vh;
 }
 
 /* Tablet/Desktop overrides */
@@ -57,4 +104,9 @@ img {
 
 @media(min-width: 729px) {
   /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+  .container {
+    max-width: 745px;
+    display: block;
+    margin: 0 auto;
+  }
 }

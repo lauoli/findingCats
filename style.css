@@ -21,10 +21,38 @@ html, body {
   font-size: 16px;
 }
 
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+p {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+img {
+  margin-top: 10px;
+  margin-left: 20px;
+  /* width: auto 0; */
+}
+
+.that {
+  height: 100vh;
+}
+
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
   /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+.pictures {
+  width: 50%;
+  padding: 30px;
 }
 
 @media(min-width: 729px) {
